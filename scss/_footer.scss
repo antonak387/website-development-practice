@@ -1,0 +1,174 @@
+.footer{
+    &__cont{
+        margin-top: var(--spacing-spacing-7);
+        padding-top: var(--spacing-spacing-7);
+        width: 100%;
+        background-color: var(--background-primary);
+        color: var(--text-primary);
+   }
+
+   &__img-box{
+        margin-left: var(--inner-gutter);
+        @media (min-width: 0px){
+            width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+        @media (min-width: 744px){
+            width: calc(((8 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (8 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+        @media (min-width: 1280px){
+            width: calc(((4 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (4 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+    }
+    &__navigation-element{
+
+        @media (min-width: 0px){
+            margin-top: 2.5rem;
+        }
+
+        @media (min-width: 744px){
+            margin-top: 0rem;
+        }
+
+        margin-left: var(--inner-gutter);
+
+        @media (min-width: 0px){
+            width: calc(((3 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (3 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
+        @media (min-width: 744px){
+            width: calc(((2 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (2 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
+    }
+
+    &__list-element{
+        @include soeh-halb-2;
+        @media (min-width: 0px) {
+            --container-grid-columns: 3;
+        }
+        @media (min-width: 744px){
+            --container-grid-columns: 2;
+        }
+    }
+
+    &__bot-cont{
+        margin-top: var(--spacing-spacing-9);
+        padding-top: 0.5rem;
+
+        border-color: white;
+        border-style: solid;
+        border-width: 0px;
+        border-top-width: 1px;
+        
+    }
+
+    &__privacy-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media (min-width: 0px){
+            width: calc(((3 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (3 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
+        @media (min-width: 744px){
+            min-height: 5.75rem;
+            width: calc(((2 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (2 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
+        @media (min-width: 1280px){
+            min-height: 6.25rem;
+            width: calc(((4 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (4 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
+        margin-left: var(--inner-gutter);
+
+        &__title{
+            @include soeh-halb-2;
+        }
+    }
+
+    &__point{
+        margin-top: 0.1rem;
+        @include soeh-basic;
+    }
+
+    &__left-cont{
+        margin-left: var(--inner-gutter);
+
+        @media (min-width: 0px){
+            width: calc(((3 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (3 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
+        @media (min-width: 744px){
+            width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
+        @media (min-width: 1280px){
+            width: calc(((8 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (8 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+        &__title{
+            @include soeh-halb-2;
+            @media (min-width: 744px){
+                display: none;
+            }
+        }
+    }
+
+    &__social-cont{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @media (min-width: 744px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__soc{
+            @media (min-width: 0px){
+                margin-top: 0.0625rem;
+            }
+            @media (min-width: 744px){
+                margin-top: 0rem;
+                margin-right: 1rem;
+            }
+            @media (min-width: 1280px){
+                margin-right: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            @include soeh-basic;
+        }
+    }
+
+    &__back-cont{
+        @include short-cols-container;
+        margin-top: 1.5rem;
+        @media (min-width: 744px){
+            margin-top: -1.5rem;
+        }
+
+        &__marg{
+            margin-left: var(--inner-gutter);
+            @media (min-width: 0px) {
+                width: calc(((3 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (3 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+            }
+            @media (min-width: 744px){
+                margin-left: calc(((((2 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (2 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter)))) + (2 * var(--inner-gutter))));
+                width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+            }
+            @media (min-width: 1280px){
+                margin-left: calc(((((4 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (4 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter)))) + (2 * var(--inner-gutter))));
+
+                width: calc(((8 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (8 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+            }
+            display: flex;
+
+        }
+    }
+    &__last-container{
+        background-color: white;
+        padding-bottom: var(--spacing-spacing-7);
+        margin-top: var(--spacing-spacing-7);
+    }
+
+}

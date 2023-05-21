@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
 
 
 
-var elements = document.querySelectorAll('.navigation__element , .navigation__search');
+var elements = document.querySelectorAll('.navigation__element , .navigation__search, .link2');
 
 elements.forEach(function(element) {
   element.addEventListener('mouseover', function() {

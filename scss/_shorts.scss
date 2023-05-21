@@ -8,6 +8,12 @@
 .link{
     @include short-links();
 }
+.link2{
+    @include soeh-basic;
+    cursor: pointer;
+    text-underline-offset: 3px;
+    text-decoration: none;
+}
 
 .big-image{
     width: 100%;
@@ -41,9 +47,8 @@
 
 .arrow-down{
 
-    background-color: white;
+    //background-color: white;
     font-size: 1rem;
-
     @media (min-width: 1920px){
         font-size: 1.3125rem;
     }
@@ -51,7 +56,7 @@
     @media (min-width: 1280px){
         font-size: 1.125rem;
     }
-
+    padding-top: 0.25em; 
     display: flex;
 
     width: 1em;
@@ -83,4 +88,12 @@
 
 .text-soeh-halb-2{
     @include soeh-halb-2;
+}
+
+.bg-primary {
+    background-color:black;
+}
+
+.bg-inverse {
+    background-color:white;
 }

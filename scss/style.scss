@@ -5,6 +5,12 @@
 @import "containers";
 
 
+::selection {
+    background-color: #ffffff; /* Измените этот цвет на нужный вам */
+    color: #000000; /* Измените этот цвет на нужный вам */
+  }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +37,7 @@ footer {
 @import "latest-update";
 @import "lilian";
 @import "join";
+@import "footer";
 
 
 //rem размер от корневого элемента   Если размер шрифта корневого элемента равен 16 пикселей, то 1rem будет равен 16 пикселей
