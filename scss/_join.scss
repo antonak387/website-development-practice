@@ -5,21 +5,25 @@
 
     &__title{
         margin-top: var(--spacing-spacing-3);
-        @include sign-2;
+        @include sign-1;
     }
     
     &__bot{
         @include short-cols-container;
         margin-top: var(--spacing-spacing-7);
-        margin-left: var(--inner-gutter);
-        width: calc(((12 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (12 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
-    
+
     }
     &__cont-button{
-        @include short-cols-container;
-        margin-top: var(--spacing-spacing-7);
+
+        @media (min-width: 0px){
+            width: calc(((12 / var(--container-grid-columns, var(--grid-columns))) * 100%) - (var(--inner-gutter) - (12 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
+
         margin-left: var(--inner-gutter);
-        width: calc(((12 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (12 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+
+        @media (min-width: 0px){
+            width: calc(((12 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (12 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+        }
     }
     &__button{
         @include soeh-medium;
