@@ -1,0 +1,189 @@
+@mixin soeh-title{
+
+	font-family: "soehne-buch", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+
+	@media (min-width: 0px){
+		font-size: 42px;
+	}	
+
+	@media (min-width: 744px){
+		font-size: 55px;
+	}	
+
+	@media (min-width: 1280px){
+		font-size: 73px;
+	}
+
+	@media (min-width: 1920px){
+		font-size: 84px;
+	}	
+	
+
+}
+
+@mixin soeh-medium{
+
+	font-family: "soehne-buch", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+
+	@media (min-width: 0px){
+		font-size: 21px;
+	}
+
+	@media (min-width: 744px){
+		font-size: 24px;
+	}
+
+	@media (min-width: 1280px){
+		font-size: 28px;
+	}
+
+	@media (min-width: 1920px){
+		font-size: 32px;
+	}
+
+}
+
+@mixin soeh-basic{
+
+	font-family: "soehne-buch", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	//text-decoration-thickness: 1px;
+
+	@media (min-width: 0px){
+		font-size: 16px;
+	}	
+	
+	@media (min-width: 744px){
+		font-size: 16px;
+	}
+
+	@media (min-width: 1280px){
+		font-size: 18px;
+	}
+	
+	@media (min-width: 1920px){
+		font-size: 21px;
+	}
+}
+
+@mixin sign-1{
+
+	font-family: "signifier-light", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	@media (min-width: 0px){
+		font-size: 42px;
+	}
+
+	@media (min-width: 744px){
+		font-size: 55px;
+	}
+
+	@media (min-width: 1280px){
+		font-size: 73px;
+	}
+
+	@media (min-width: 1920px){
+		font-size: 84px;
+	}
+}
+
+@mixin sign-2{
+
+	font-family: "signifier-light", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	font-weight: 400;
+	color: #FFFFFF;
+
+	@media (min-width: 0px){
+		font-size: 32px;
+	}	
+
+	@media (min-width: 744px){
+		font-size: 42px;
+	}
+
+	@media (min-width: 1280px){
+		font-size: 55px;
+	}
+	
+	@media (min-width: 1920px){
+		font-size: 64px;
+	}
+}
+
+@mixin sign-3{
+
+	font-family: "signifier-light", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	font-weight: 400;
+	color: #FFFFFF;
+
+	@media (min-width: 0px){
+		font-size: 28px;
+	}
+
+	@media (min-width: 744px){
+		font-size: 36px;
+	}	
+
+	@media (min-width: 1280px){
+		font-size: 48px;
+	}
+
+	@media (min-width: 1920px){
+		font-size: 55px;
+	}
+}
+
+@mixin soeh-halb-1{
+
+	font-family: "soehne-halbfett", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+
+	@media (min-width: 0px){
+		font-size: 21px;
+	}
+
+	@media (min-width: 744px){
+		font-size: 24px;
+	}
+
+	@media (min-width: 1280px){
+		font-size: 28px;
+	}
+
+	@media (min-width: 1920px){
+		font-size: 32px;
+	}
+
+}
+
+@mixin soeh-halb-2{
+
+	font-family: "soehne-halbfett", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 400;
+	color: #FFFFFF;
+	
+	@media (min-width: 0px){
+		font-size: 16px;
+	}
+	
+	@media (min-width: 744px){
+		font-size: 16px;
+	}
+
+	@media (min-width: 1280px){
+		font-size: 18px;
+	}
+
+
+	@media (min-width: 1920px){
+		font-size: 21px;
+	}
+
+}

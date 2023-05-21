@@ -1,0 +1,37 @@
+@import url("../fonts/fonts.css");
+@import "fonts";
+@import "root";
+@import "shorts";
+@import "columns";
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html,
+body {
+    background: #000;
+}
+header {
+    background: #000000;
+}
+main{
+    background: #000;
+}
+footer {
+    background: #000;
+}
+
+@import "navigation";
+@import "intro";
+@import "ui-block";
+@import "chatgpt";
+@import "latest-update";
+@import "lilian";
+@import "join";
+
+
+//rem размер от корневого элемента   Если размер шрифта корневого элемента равен 16 пикселей, то 1rem будет равен 16 пикселей
+//em размер относительно родительского элемента,   Если размер шрифта родительского элемента равен 14 пикселям, то 1em равен 14 пикселей; 

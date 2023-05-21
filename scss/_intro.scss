@@ -1,0 +1,220 @@
+.intro{
+	
+    position: relative;
+	
+    margin-top: -4rem;
+
+    height: calc(var(--vh, 1vh) * 100);
+
+    min-height: 500px;
+
+    width: 100%;
+
+	
+
+    @media (min-width: 744px){
+        margin-top: -5rem;
+    }
+
+	&__all{
+		position: absolute;
+		z-index: 1;
+		height: 100%;
+		width: 100%;
+	}
+
+
+	&__background{
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__justclass{
+		position: absolute;
+		z-index: 1;
+		height: 100%;
+		max-width: 100%;
+	}
+
+	&__video{
+
+		display: block;
+		
+		
+
+		height: auto;
+		position: relative;
+		z-index: 2;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		
+		opacity: 0.5;
+		
+		transition-property: opacity;
+		transition-timing-function: cubic-bezier(.4,0,.2,1);
+		
+		transition-duration: .3s;
+
+	}
+
+	&__pause{
+
+		z-index: 3;
+		position: absolute;
+
+		bottom: var(--inner-gutter);
+		right: var(--inner-gutter);
+
+		@include soeh-basic;
+		
+		@media (min-width: 0px){
+			padding-bottom: 0.625rem;
+			padding-top: 0.5625rem;
+			padding-left: .625rem;
+			padding-right: .625rem;
+		}
+		@media (min-width: 1280px){
+			padding-top: 0.625rem;
+			padding-bottom: 0.75rem;
+			padding-left: .625rem;
+			padding-right: .625rem;
+		}
+		
+		box-sizing: border-box;
+		border-width: 0;
+		border-style: solid;
+		border-color: currentColor;
+		background-color: #000000;
+
+		cursor: pointer;
+		
+	}
+
+	&__rect{
+		fill: white; 
+	}
+
+
+	&__conteiner1{
+
+		z-index: 2;
+		width: calc(var(--container-width, 100%) - (2 * var(--outer-gutter, 0)));
+		margin-right: auto;
+		margin-left: var(--outer-gutter);
+
+		position: absolute;
+
+		right: 0rem;
+
+		left: 0rem;
+
+		bottom: 0.8125rem;
+
+		@media (min-width: 744px){
+			bottom: 1.375rem;
+		}
+		
+	}
+
+	
+
+	&__conteiner2{
+
+		@include short-cols-container
+
+	}
+
+	&__conteiner3{
+		position: relative;
+
+		margin-left: var(--inner-gutter);
+
+		@media (min-width: 0px){
+			width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+		}
+
+
+		@media (min-width: 744px){
+			width: calc(((8 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (8 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+		}
+
+		@media (min-width: 1280px){
+			margin-left: calc(((((2 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (2 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter)))) + (2 * var(--inner-gutter))));
+		}
+
+		@media (min-width: 1280px){
+			width: calc(((8 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (8 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+		}
+		
+	}
+
+	&__title{
+		@include soeh-title;
+
+		line-height: 110%;
+		
+		@media (min-width: 1280px){
+			line-height: 100%;
+		}
+
+		
+	}
+
+	&__bottom{
+		//margin-top: var(--spacing-spacing-6);
+		pointer-events: auto;
+		margin-right: 3.75rem;
+		display: flex;
+		flex-direction: row;
+		
+		flex-wrap: wrap;
+
+		@media (min-width: 0px){
+			--container-grid-columns: 6;
+			margin-top: 36px;
+		}
+			
+		@media (min-width: 744px){
+			margin-right: 0rem;
+			--container-grid-columns: 8;
+			margin-top: 48px;
+		}
+
+		@media (min-width: 1280px){
+			--container-grid-columns: 8;
+			margin-top: 60px;
+		}
+
+		@media (min-width: 1960px){
+			margin-top: 72px;
+		}
+		
+		
+	}
+
+	&__button{
+
+		padding: 3px 10px 5px;
+
+		box-sizing: border-box;
+
+		border: 1px solid #FFFFFF;
+
+		@include soeh-basic;
+
+		cursor: pointer;
+
+		background-color: #00000000;
+	}
+
+	&__link{
+		padding-left: 24px;
+		padding-top: 4px;
+	}
+
+
+
+}
+

@@ -1,0 +1,86 @@
+@mixin short-links{
+    @include soeh-basic;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+.link{
+    @include short-links();
+}
+
+.big-image{
+    width: 100%;
+}
+
+.cont-mr--6{
+    margin-top: calc(var(--spacing-spacing-6) * -1);
+}
+
+.arrow-up{
+    
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 0;
+    
+    width: 1em;
+    height: 1em;
+
+    margin-right: -0.25rem;
+    margin-left: -0.125rem;
+
+    top: 0.1em;
+
+    position: relative;
+
+    &__polygon{
+        fill: currentColor; /* наследуем цвет */
+    }
+}
+
+.arrow-down{
+
+    background-color: white;
+    font-size: 1rem;
+
+    @media (min-width: 1920px){
+        font-size: 1.3125rem;
+    }
+
+    @media (min-width: 1280px){
+        font-size: 1.125rem;
+    }
+
+    display: flex;
+
+    width: 1em;
+    height: 1em;
+
+}
+
+.white-line{
+    border: none;
+    height: 1px;
+    background-color: white;
+    width: calc(var(--container-width, 100%) - (2 * var(--outer-gutter, 0)));
+    margin-right: auto;
+    margin-left: var(--outer-gutter);
+}
+
+.gray-line{
+    border: none;
+    height: 1px;
+    background-color: rgb(62, 62, 62);
+    width: calc(var(--container-width, 100%) - (2 * var(--outer-gutter, 0)));
+    margin-right: auto;
+    margin-left: var(--outer-gutter);
+}
+
+.text-soeh-basic{
+    @include soeh-basic;
+}
+
+.text-soeh-halb-2{
+    @include soeh-halb-2;
+}

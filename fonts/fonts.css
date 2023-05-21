@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "signifier-light";
+    src: url("../fonts/signifier-light.woff2") format("truetype");
+}
+
+@font-face {
+    font-family: "soehne-halbfett";
+    src: url("../fonts/soehne-halbfett.woff2") format("truetype");
+}
+
+@font-face {
+    font-family: "soehne-buch";
+    src: url("../fonts/soehne-buch.woff2") format("truetype");
+}
+

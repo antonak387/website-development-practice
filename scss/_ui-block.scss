@@ -1,0 +1,54 @@
+.ui-block{
+	
+	//padding-top: var(--spacing-spacing-7);
+	padding-bottom: var(--spacing-spacing-7);	
+
+	&__container{
+
+		@include short-cols-container;
+
+		margin-left: 0px;
+
+	}
+
+	&__element{
+
+		margin-top: var(--spacing-spacing-6);
+
+		margin-left: var(--inner-gutter);
+
+		@media (min-width: 0px){
+		  width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+		}
+
+		@media (min-width: 744px){
+		  width: calc(((4 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (4 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+		}
+
+		@media (min-width: 1280px){
+			width: calc(((3 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (3 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+		}
+
+	}
+
+	&__title{
+
+		@include soeh-halb-1;
+		
+		letter-spacing: 0;
+		padding-right: var(--inner-gutter);
+		
+		@media (min-width: 744px){
+		  letter-spacing: -.01em;
+		  max-width: 24rem;
+		}
+
+		scroll-margin-top: 4rem;
+
+		scroll-margin-top: 6rem;
+	}
+
+	&__link{
+		margin-top: var(--spacing-spacing-3);
+	}
+}

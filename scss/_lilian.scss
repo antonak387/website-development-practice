@@ -1,0 +1,37 @@
+.lilian{
+    &__cont{
+        @include short-container;
+        padding-top: .5rem;
+    }
+    &__two-cols{
+        @include short-2-cols;
+        margin-top: 2.5rem;
+        @media (min-width: 0px){
+          order: 2;
+        }        
+        @media (min-width: 744px){
+          margin-top: 0rem;
+          order: 1;
+        }
+        margin-left: var(--inner-gutter);
+
+    }
+
+    &__bot{
+        margin-top: var(--spacing-spacing-4);
+    }
+    &__image{
+        @include short-2-cols;
+        margin-top: .5rem;
+        @media (min-width: 0px){
+          order: 1;
+        }
+
+        @media (min-width: 744px){
+          order: 2;
+          margin-top: .625rem;
+        }
+        width: 100%;
+        margin-left: var(--inner-gutter);
+    }
+}

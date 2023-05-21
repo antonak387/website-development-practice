@@ -1,0 +1,154 @@
+@mixin short-container{
+	width: calc(var(--container-width, 100%) - (2 * var(--outer-gutter, 0)));
+    margin-right: auto;
+    margin-left: var(--outer-gutter);
+}
+.container{
+    @include short-container();
+}
+@mixin short-cols-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: calc(var(--inner-gutter) * -1);
+}
+.cols-container {
+    @include short-cols-container();
+}
+
+
+@mixin short-big-conts{
+    padding-bottom: var(--spacing-spacing-7);
+	scroll-margin-top: 4rem;
+	@media (min-width: 744px){
+		scroll-margin-top: 6rem;
+	}
+	margin-top: 0rem;
+	padding-top: 0rem;
+}
+
+.big-cont{
+    @include short-big-conts();
+    &__top{
+        padding-top: var(--spacing-spacing-3);
+		width: 100%;
+    }
+}
+
+@mixin short-2-cols{
+    margin-left: var(--inner-gutter);
+
+    @media (min-width: 0px){
+        width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+    }
+
+    @media (min-width: 744px){
+        width: calc(((4 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (4 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+    }
+
+    @media (min-width: 1280px){
+    width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+    }
+}
+
+.two-cols{
+    @include short-2-cols();
+
+	&__title{
+		@include sign-3;
+	}
+    &__bot{
+        margin-top: var(--spacing-spacing-4);
+    }
+}
+.two-cols2{
+    @include short-2-cols();
+
+    @media (min-width: 744px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text{
+        @include soeh-medium;
+        @media (min-width: 0px){
+            margin-top: 1rem;
+        }
+        @media (min-width: 744px){
+            margin-top: 0rem;
+        }
+    }
+
+    &__link{
+        margin-top: var(--spacing-spacing-4);
+    }
+
+    
+}
+
+@mixin short-4-cols{
+    margin-top: var(--spacing-spacing-6);
+    margin-left: var(--inner-gutter);
+
+    @media (min-width: 0px){
+        width: calc(((6 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (6 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+    }
+
+    @media (min-width: 744px){
+        width: calc(((4 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (4 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+    }
+
+    @media (min-width: 1280px){
+        width: calc(((3 / var(--container-grid-columns, var(--grid-columns))) * (100% - var(--inner-gutter))) - (var(--inner-gutter) - (3 / var(--container-grid-columns, var(--grid-columns)) * var(--inner-gutter))));
+    }
+}
+.four-cols{
+    @include short-4-cols();
+
+    &__cells{
+        position: relative;
+        cursor: pointer;
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        scroll-margin-top: 4rem;
+
+        text-decoration-line: none;
+
+        @media (min-width: 744px){
+            scroll-margin-top: 6rem;
+        }
+
+    }
+
+    &__image{
+        display: block;
+        //vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    &__name{
+
+        @include soeh-halb-2;
+
+        margin-top: 0.5rem;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 1px;
+        text-underline-offset: 0.05em;
+        text-decoration-color: white;
+        
+        text-decoration-line: none;
+
+        scroll-margin-top: 4rem;
+        @media (min-width: 744px){
+            scroll-margin-top: 6rem;
+        }
+    }
+
+    &__data{
+        @include soeh-basic;
+        margin-top: 0.25rem;
+    }
+    
+    
+}

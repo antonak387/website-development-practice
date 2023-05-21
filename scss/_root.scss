@@ -1,0 +1,89 @@
+:root {
+    --breakpoint: "xs";
+    --container-width: unset;
+    --inner-gutter: 16px;
+    --outer-gutter: 16px;
+    --grid-columns: 6;
+    --env: "production";
+    --grid-column-bg: rgba(127, 255, 255, .25);
+
+    @media (min-width: 429px)
+    {
+    --breakpoint: "sm";
+    --container-width: unset;
+    --inner-gutter: 16px;
+    --outer-gutter: 16px;
+    --grid-columns: 6;
+    }
+
+    @media (min-width: 744px)
+    {
+        --breakpoint: "md";
+        --container-width: unset;
+        --inner-gutter: 16px;
+        --outer-gutter: 16px;
+        --grid-columns: 8;
+    }
+    
+    @media (min-width: 1280px)
+    {
+        --breakpoint: "lg";
+        --container-width: unset;
+        --inner-gutter: 24px;
+        --outer-gutter: 24px;
+        --grid-columns: 12;
+    }
+
+    @media (min-width: 1440px)
+    {
+        --breakpoint: "xl";
+        --container-width: unset;
+        --inner-gutter: 24px;
+        --outer-gutter: 24px;
+        --grid-columns: 12;
+    }
+
+    @media (min-width: 1920px){
+        --breakpoint: "xxl";
+        --container-width: 1872px;
+        --inner-gutter: 24px;
+        --outer-gutter: 24px;
+        --grid-columns: 12;
+    }
+
+
+    --spacing-spacing-1: .25rem;
+    --spacing-spacing-2: .5rem;
+    --spacing-spacing-3: .5rem;
+    --spacing-spacing-4: 1rem;
+    --spacing-spacing-5: 1.5rem;
+    --spacing-spacing-6: 2.25rem;
+    --spacing-spacing-7: 4.5rem;
+    --spacing-spacing-8: 5.25rem;
+    --spacing-spacing-9: 9rem;
+    --spacing-spacing-10: 11.25rem;
+    --spacing-spacing-11: 11.25rem;
+
+
+    @media (min-width: 744px){
+      --spacing-spacing-5: 2.25rem;
+      --spacing-spacing-6: 3rem;
+      --spacing-spacing-7: 5.25rem;
+      --spacing-spacing-8: 7rem;
+      --spacing-spacing-9: 10rem;
+      --spacing-spacing-10: 12.5rem;
+      --spacing-spacing-11: 12.5rem;
+    }
+
+    @media (min-width: 1280px){
+      --spacing-spacing-3: .75rem;
+      --spacing-spacing-4: 1.5rem;
+      --spacing-spacing-5: 3rem;
+      --spacing-spacing-6: 3.75rem;
+      --spacing-spacing-7: 6rem;
+      --spacing-spacing-8: 9rem;
+      --spacing-spacing-9: 11.25rem;
+      --spacing-spacing-10: 11.25rem;
+      --spacing-spacing-11: 16.5rem;
+    }
+}
