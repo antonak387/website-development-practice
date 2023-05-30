@@ -90,3 +90,10 @@ cellsElements.forEach(function(cellsElement) {
     nameElement.style.textDecoration = 'none';
   });
 });
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
